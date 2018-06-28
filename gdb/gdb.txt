@@ -1,0 +1,60 @@
+			___________________
+			
+				GDB
+			___________________
+
+You can run gdb with --args parameter,
+
+	----------------------------------------
+	gdb --args executablename arg1 arg2 arg3
+	----------------------------------------
+
+			___________________
+
+				Basics
+			___________________
+
+[s]tep
+	step to next line of source
+
+[step 'x']
+	step 'x' amount of times
+
+[fin]ish
+	step out of current func, display return value
+
+[l]ist
+	list 10 lines of source code starting from end of last use of list
+
+[l]ist 'x'
+	list 10 lines of source code starting from 'x'
+
+
+e[x]amine/'display format' 'memory location' 
+	
+	display format
+		- 'o' octal
+		- 'x' hexadecimal
+		- 't' binary
+		- 'u' unsigned decimal	
+		
+		- 'b' byte
+		- 'h' halfword
+		- 'w' word	(default until changed once)
+		- 'g' giant
+
+		- 'i' instruction
+			
+			____________________
+		
+				x86
+			____________________
+
+[i]nfo [r]egister 'x'
+	gives content of register 'x'
+
+[i]nfo [r]egister [a]ll
+	gives content of all registers
+
+[disassemble]
+	gives assembly of current fun
